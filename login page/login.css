@@ -1,0 +1,118 @@
+/*1. background belakang*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.contact-container{
+	background-image: url(../gambar/bg1.jpg);
+	background-size: cover;
+	height: 100vh;
+}
+/*2. kotak right(container kotak sign in)*/
+.right{
+	position: absolute;
+	width: 360px;
+	left: 60%;
+	height: 580px;
+	top: calc(50% - 580px/2);
+	background: #fff;
+	border-radius: 25px;
+	text-align: center;
+}
+/*3. untuk sign in*/
+.title{
+	font-family:"sansation" , sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 145px;
+	align-items: center;
+	color: #5754dd;
+}
+/*4.untuk tulisan dalam kotak place holder*/
+::placeholder{
+	color:  #85b6ff0;
+	font-size : 18px;
+}
+/*5. untuk icon*/
+.icon{
+	position: absolute;
+	padding : 24px 32px;
+	height: 75px;
+	width: 90px;
+	margin: -15px;
+}
+/*6. logo*/
+.username{
+	margin: 15px 0;
+}
+/*7. input fields*/
+input[type='email'],
+input[type='password']{
+	border: none;
+	outline: none;
+		/*outline utk agar ketika di click kotak tidak berubah warna */
+	background: none;
+	font-size: 15px;
+	color: black;
+	padding: 20px 10px 20px 5px;
+	border: 2px solid #568eee;
+	width: 280px;
+	height: 45px;
+	border-radius: 25px;
+	box-sizing: border-box;
+	text-align: center;
+	overflow: hidden;
+	font-family: 'scheherazade new',serif;
+}
+/*8. styling keep me logged*/
+input[type='checkbox'] {
+	vertical-align: middle;
+		/*vertical utk membuat tulisan sejajar dengan kotak checkbox*/
+	margin-right: 3px;
+	margin-bottom: 3px;
+	font-weight: bold;
+	height: 18px;
+	width: 18px;
+}
+.keepme{
+	margin: 15px;
+	color: #71a1bd;
+	font-family: 'scheherazade new',serif;
+	font-weight: bold;
+}
+/*9. styling submit button*/
+button{
+	width: 260px;
+	height: 45px;
+	/*left: 1273px;
+	top: 780px;*/
+	font-family: "sansation",sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 45px;
+	cursor: pointer;
+	color: #fff;
+	border: none;
+	background: rgba(135, 113, 224, .89);
+	border-radius: 25px;
+}
+
+/*10. styling forgot password*/
+.link{
+	text-align: center;
+	display: block;
+	margin: 18px;
+	color: #71a1bd;
+	font-family: 'scheherazade new',serif;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/*11.media query for responsiveness(agar ngikutin saat tampil di hp)*/
+@media only screen and (max-width: 700px){
+	.right{
+		left:  calc(68% - 500px / 2);
+	}
+}
